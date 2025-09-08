@@ -42,12 +42,8 @@
   </normalmap>
 
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <!-- FIXME: Why setting up a base color is the base is disabled ? -->
-    <input name="base_weight" type="float" value="0" />
+    <input name="base_weight" type="float" value="1" />
     <input name="base_color" type="color3" nodename="BaseColor" />
-    <!-- FIXME: Why setting up a coat if the IOR is 1 ? -->
-    <input name="coat_ior" type="float" value="1" />
-    <input name="coat_weight" type="float" value="1" />
     <input name="specular_ior" type="float" value="1.52" />
     <input name="specular_roughness" type="float" nodename="Roughness" />
     <input name="specular_roughness_anisotropy" type="float" value="0.5" />

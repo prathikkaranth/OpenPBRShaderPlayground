@@ -46,7 +46,7 @@
   </normalmap>
 
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <!-- FIXME: Fuzz is not enabled by default -->
+    <input name="fuzz_weight" type="float" value="1" />
     <input name="fuzz_roughness" type="float" value="0.3" />
     <input name="coat_weight" type="float" nodename="Coat_Weight" />
     <input name="base_color" type="color3" value="0, 0.386506, 1" />

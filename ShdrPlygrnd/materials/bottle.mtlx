@@ -65,11 +65,10 @@
     <input name="specular_color" type="color3" value="0.521, 0.521, 0.521" />
     <input name="specular_roughness" type="float" nodename="to_float1" />
 
+	<input name="coat_weight" type="float" value="1.0" />
     <input name="coat_ior" type="float" value="1.7" />
     <input name="coat_color" type="color3" value="0.46778, 1.00002, 0.46778" />
     <input name="coat_roughness_anisotropy" type="float" value="1" />
-    <!-- FIXME: No available on OpenPBR v1.1 -->
-    <!-- <input name="coat_rotation" type="float" value="1" /> -->
 
     <input name="fuzz_weight" type="float" nodename="to_float1_01" />
     <input name="fuzz_color" type="color3" value="0.45, 0.45, 0.45" />

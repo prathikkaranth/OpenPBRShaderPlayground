@@ -15,7 +15,6 @@
   </colorcorrect>
 
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <!-- FIXME: For paper like material using thin wall is ideal ! -->
     <input name="base_color" type="color3" nodename="BaseColor" />
     <input name="specular_color" type="color3" value="0.4129, 0.4129, 0.4129" />
     <input name="specular_roughness" type="float" value="0.4" />
@@ -23,6 +22,7 @@
     <input name="subsurface_color" type="color3" nodename="mtlxcolorcorrect1" />
     <input name="subsurface_radius" type="float" value="0.2" />
     <input name="subsurface_radius_scale" type="color3" value="1, 1, 1" />
+    <input name="geometry_thin_walled" type="boolean" value="true" />
   </open_pbr_surface>
 
   <surfacematerial name="paperPlans" type="material">

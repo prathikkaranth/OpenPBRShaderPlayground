@@ -12,13 +12,10 @@
       <input name="file" type="filename" colorspace="Raw" value="textures/masonJar_MAT_Roughness.<UDIM>.tif" />
       <input name="texcoord" type="vector2" nodename="st" />
   </image>
-  <!-- FIXME: Opacity is defined but unused -->
-  <!--
-  <image name="Opacity" type="color3">
+  <image name="Transmission" type="float">
       <input name="file" type="filename" colorspace="Raw" value="textures/masonJar_MAT_TransMask.<UDIM>.tif" />
       <input name="texcoord" type="vector2" nodename="st" />
   </image>
-  -->
   <image name="Normal" type="vector3">
       <input name="file" type="filename" colorspace="Raw" value="textures/masonJar_MAT_Normal.<UDIM>.tif" />
       <input name="texcoord" type="vector2" nodename="st" />
@@ -49,7 +46,7 @@
   </normalmap>
 
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <!-- FIXME: Coat is not enabled by default -->
+    <input name="coat_weight" type="float" value="1.0" />
     <input name="coat_ior" type="float" value="1.47" />
     <input name="coat_roughness" type="float" value="0.1" />
     <input name="base_color" type="color3" nodename="BaseColor" />
@@ -57,8 +54,8 @@
     <input name="specular_ior" type="float" value="1.001" />
     <input name="specular_roughness" type="float" nodename="Roughness" />
     <input name="geometry_normal" type="vector3" nodename="mtlxnormalmap1" />
-    <input name="transmission_weight" type="float" value="1" />
-    <input name="transmission_depth" type="float" value="0.000001" />
+    <input name="transmission_weight" type="float" nodename="Transmission" />
+    <input name="transmission_depth" type="float" value="0.001" />
   </open_pbr_surface>
 
   <surfacematerial name="masonJarGlass" type="material">
