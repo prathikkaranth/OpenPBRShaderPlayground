@@ -46,8 +46,6 @@
   </normalmap>
 
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <input name="fuzz_weight" type="float" value="1" />
-    <input name="fuzz_roughness" type="float" value="0.3" />
     <input name="base_color" type="color3" nodename="BaseColor" />
     <input name="base_metalness" type="float" nodename="Metalness" />
     <input name="specular_color" type="color3" value="0.62893, 0.62893, 0.62893" />

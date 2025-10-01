@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <materialx version="1.39" colorspace="lin_rec709">
   <open_pbr_surface name="mtlxopen_pbr_surface" type="surfaceshader">
-    <input name="fuzz_weight" type="float" value="0.5" />
-    <input name="fuzz_roughness" type="float" value="0.28205" />
     <input name="coat_weight" type="float" value="1" />
     <input name="coat_ior" type="float" value="1.34375" />
     <input name="base_color" type="color3" value="1, 1, 1" />
